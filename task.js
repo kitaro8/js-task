@@ -75,6 +75,6 @@ here file.write(v+(',')) i should be file.write(v.join(','))
 but it get error in windows so i make it like this "I KNOW IT'S WRONG" >_>
 */
     var file = fs.createWriteStream('output.txt');
-    newn.map(function(v) { file.write(v.join(',')); });
+    newn.map(function(v) { file.write(v+(',')); });
     file.end();
 });
